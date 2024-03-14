@@ -1,34 +1,25 @@
 * {
     box-sizing: border-box;
+    margin-top:0;
 }
 
 body {
+    margin-top:0;
     background-color: transparent;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #0A251C;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 .background {
-    background-image: url("video/Plantwise.jpg");
+    background-image: url("video/plantvideo.mp4");
     position: relative; 
     height: 100vh;
     width: 100vw;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
     opacity: 1;
 }
 
@@ -49,7 +40,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .login-box {
@@ -87,7 +78,7 @@ body {
 
 .login-box p {
     font-family:  'Higuen Elegant Serif', serif;
-    color: #ffd900;
+    color: #FCDC2A;
     font-size: 14px;
     margin-bottom: 20px;
     margin-top:-20px;
@@ -146,3 +137,21 @@ body {
 .login-box p a:hover {
     text-decoration: underline;
 }
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* On mouse-over */
+  /* .btn:hover {background: #eee;} */
+  
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: #FCDC2A;}
+  .danger {color: red;}
+  .default {color: black;}
