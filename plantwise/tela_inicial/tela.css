@@ -1,0 +1,8 @@
+* {
+    color: var(--mitho-10-neutral-n-0, #FFF);
+font-family: Inter;
+font-size: 17.567px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 21.081px */
+}
