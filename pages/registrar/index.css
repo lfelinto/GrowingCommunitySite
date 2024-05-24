@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .group-child {
   position: absolute;
   top: 0;
@@ -537,4 +538,107 @@
   font-size: var(--font-size-base);
   color: var(--neutral-white);
   font-family: var(--font-inter);
+}
+
+/* Media Queries para Responsividade */
+
+/* Dispositivos pequenos (telefones) */
+@media (max-width: 767px) {
+  .group-child {
+    width: 100%;
+    height: auto;
+  }
+  .left-side {
+    left: 0;
+    width: 100%;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+  }
+  .frame-child {
+    width: 100%;
+    height: auto;
+  }
+  .text-content-wrapper {
+    top: 3rem;
+    left: 1rem;
+    font-size: var(--font-size-lg);
+  }
+  .frame-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .thread-1 {
+    width: 100%;
+  }
+  .thread-group {
+    left: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+/* Dispositivos médios (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .group-child {
+    width: 100%;
+    height: auto;
+  }
+  .left-side {
+    left: 0;
+    width: 100%;
+    padding: 6rem 3rem;
+    box-sizing: border-box;
+  }
+  .frame-child {
+    width: 100%;
+    height: auto;
+  }
+  .text-content-wrapper {
+    top: 5rem;
+    left: 2rem;
+    font-size: var(--font-size-xl);
+  }
+  .frame-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .thread-1 {
+    width: 100%;
+  }
+  .thread-group {
+    left: 2rem;
+    width: calc(100% - 4rem);
+  }
+}
+
+/* Dispositivos grandes (desktops) */
+@media (min-width: 1024px) {
+  .group-child {
+    width: 90rem;
+    height: 64rem;
+  }
+  .left-side {
+    left: 45rem;
+    width: 45rem;
+    padding: 8.75rem;
+    box-sizing: border-box;
+  }
+  .frame-child {
+    width: 43.938rem;
+    height: 61.625rem;
+  }
+  .text-content-wrapper {
+    top: 7.625rem;
+    left: 4.25rem;
+    font-size: var(--font-size-5xl);
+  }
+  .frame-container {
+    flex-direction: row;
+    gap: 7rem;
+  }
+  .thread-1 {
+    width: 34.375rem;
+  }
+  .thread-group {
+    left: 4.75rem;
+  }
 }

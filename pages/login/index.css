@@ -621,3 +621,62 @@
   color: var(--color-gold-100);
   font-family: var(--font-inter);
 }
+/* Estilos para os inputs e botões de login */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button1, .button {
+  width: 100%;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button1:hover, .button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para o checkbox de lembrar-me */
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+/* Estilos para o link de esquecimento de senha */
+.esqueceu-sua-senha {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.esqueceu-sua-senha:hover {
+  color: #0056b3;
+}
+
+/* Estilos para tornar a página responsiva */
+@media screen and (max-width: 768px) {
+  .left-side {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .button1, .button, .input {
+    width: calc(100% - 20px);
+  }
+}

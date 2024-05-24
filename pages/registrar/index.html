@@ -28,42 +28,41 @@
         <div class="spacing"></div>
         <div class="form">
           <div class="form-group">
-            <div class="nome-de-usurio">Nome de usuário</div>
+            <label class="nome-de-usurio" for="username">Nome de usuário</label>
             <div class="input">
-              <div class="yayan-cool">Yayan Cool</div>
+              <input type="text" id="username" placeholder="Yayan Cool" />
             </div>
           </div>
           <div class="form-group">
-            <div class="nome-de-usurio">Email</div>
+            <label class="nome-de-usurio" for="email">Email</label>
             <div class="input">
-              <div class="yayan-cool">yayan@durian.cc</div>
+              <input type="email" id="email" placeholder="yayan@durian.cc" />
             </div>
           </div>
           <div class="form-group">
-            <div class="nome-de-usurio">Senha</div>
+            <label class="nome-de-usurio" for="password">Senha</label>
             <div class="input">
-              <div class="div">••••••••••••••••••••••</div>
+              <input type="password" id="password" placeholder="••••••••••••••••••••••" />
             </div>
           </div>
           <div class="remember-me">
-            <div class="remember-me-child"></div>
-            <div class="nome-de-usurio">
+            <input type="checkbox" id="terms" />
+            <label class="nome-de-usurio" for="terms">
               Concordo com os termos e condições de uso
-            </div>
+            </label>
           </div>
-          <div class="button">
+          <div class="button" id="registerButton">
             <div class="nome-de-usurio">Registrar</div>
           </div>
         </div>
         <div class="spacing1"></div>
         <div class="voc-tem-uma-container">
           <span>Você tem uma conta? </span>
-          <span class="conectar-se">Conectar-se!</span>
+          <span class="conectar-se" id="loginLink">Conectar-se!</span>
         </div>
       </div>
       <div class="rectangle-group">
         <img class="frame-child" alt="" src="./public/rectangle-2@2x.png" />
-
         <div class="terms-privacy">
           <div class="privacy-policy">PRIVACY POLICY</div>
           <div class="terms-privacy-child"></div>
@@ -166,5 +165,26 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById('registerButton').addEventListener('click', function() {
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const terms = document.getElementById('terms').checked;
+
+        if (username && email && password && terms) {
+          // Here you would add the logic to send this data to your server for registration
+          console.log('Registration successful!');
+          // After successful registration, redirect to login page
+          window.location.href = '../login/index.html';
+        } else {
+          alert('Please fill in all fields and agree to the terms.');
+        }
+      });
+
+      document.getElementById('loginLink').addEventListener('click', function() {
+        window.location.href = '../login/index.html';
+      });
+    </script>
   </body>
 </html>
