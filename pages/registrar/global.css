@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-irish-grover: "Irish Grover";
+
+  /* font sizes */
+  --font-size-3xs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-base: 1rem;
+
+  /* Colors */
+  --color-darkslategray-100: #33394f;
+  --brand-color-second-color: #252d3a;
+  --neutral-white: #fff;
+  --color-gold-100: #fcdc2a;
+  --neutral-brown: #8d8080;
+  --color-gray-100: #202433;
+  --color-whitesmoke: #ececec;
+  --color-plum: #a79edf;
+  --brand-color-primary: #fc728b;
+  --spacing: rgba(255, 245, 209, 0);
+
+  /* Gaps */
+  --gap-11xs: 0.125rem;
+  --gap-8xs: 0.312rem;
+  --gap-3xs: 0.625rem;
+
+  /* Paddings */
+  --padding-xl: 1.25rem;
+  --padding-21xl: 2.5rem;
+
+  /* Border radiuses */
+  --br-mini: 15px;
+  --br-8xs: 5px;
+  --br-5xs: 8px;
+}
