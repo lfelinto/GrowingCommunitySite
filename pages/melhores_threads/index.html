@@ -18,74 +18,53 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Irish Grover:wght@400&display=swap"
     />
-  </head>
-  <body>
+  
+
     <div class="desktop-melhores-threads-1">
-      <div class="navbar">
-        <div class="links">
-          <div class="home">Home</div>
-          <div class="about">Sobre-nós</div>
-          <div class="threads">Threads</div>
-          <div class="community">Comunidade</div>
-          <div class="leaderboards">Melhores</div>
-        </div>
-      </div>
-      <div class="logo-brand">
-        <div class="logo-brand-child"></div>
-        <div class="logo-brand-item"></div>
-        <div class="logo-brand-inner"></div>
-        <div class="ellipse-div"></div>
-        <div class="logo-brand-child1"></div>
-        <div class="d-parent">
-          <div class="d">d</div>
-          <div class="g">G</div>
-        </div>
-      </div>
+
+      <!--  cabecalho -->
       <header class="content-area">
+
         <div class="desktop-navbar-component">
           <div class="brands-parent">
             <div class="brands">
-              <div class="logo-brand1">
-                <div class="logo-brand-child2"></div>
-                <div class="logo-brand-child3"></div>
-                <div class="logo-brand-child4"></div>
-                <div class="logo-brand-child5"></div>
-                <div class="logo-brand-child6"></div>
-                <div class="d-group">
-                  <div class="d1">d</div>
-                  <div class="g1">G</div>
-                </div>
+              <div class="logo-brand">
+                <div class="logo-brand-child1"></div>
+                <div class="d-parent">
+                  </div>
               </div>
               <div class="digiforumio-parent">
-                <div class="digiforumio">DigiForum.io</div>
-                <div class="platform-discussion">Platform Discussion</div>
+                <div class="digiforumio">Plantwise</div>
+                <div class="platform-discussion">Platforma de Discussão</div>
               </div>
             </div>
             <div class="search">
-              <div class="frame-parent">
+              <div class="frame-parent24">
                 <div class="iconsaxlinearsearchstatus-wrapper">
-                  <img class="iconsaxlinearsearchstatus" alt="" />
+                  <img
+                    class="iconsaxlinearsearchstatus"
+                    alt=""
+                    src="./public/iconsaxlinearsearchstatus.svg"
+                  />
                 </div>
-                <div class="explore">Explore...</div>
+                <div class="digiforumio">Explore...</div>
               </div>
             </div>
           </div>
-          <div class="navbar1">
+          <div class="navbar">
             <div class="links1">
-              <div class="home1">Home</div>
-              <div class="about1">About</div>
-              <div class="threads1">Threads</div>
-              <div class="community1">Community</div>
-              <div class="leaderboards1">Leaderboards</div>
+              <div class="profile"id="todas-home">Home</div>
+              <div class="profile"id="todas-sobre-nos">Sobre-nós</div>
+              <div class="profile"id="todas-threads">Threads</div>
+              <div class="profile"id="todas-comunidades">Comunidade</div>
+              <div class="profile"id="todas-melhores">Melhores</div>
             </div>
           </div>
-          <div class="frame-group">
-            <div class="frame-wrapper">
-              <img class="frame-child" alt="" />
-            </div>
-            <img class="iconsaxlinearsmsnotification" alt="" />
-          </div>
+
+        <!--  cabecalho -->
         </div>
+        <!--  cabecalho -->
+
         <img class="content-area-child" alt="" src="./public/group-20-1.svg" />
 
         <img
@@ -110,6 +89,10 @@
           />
         </div>
       </header>
+     <!--  cabecalho -->
+
+
+      <!--  Centro da Tela -->
       <main class="information-area-parent">
         <div class="information-area">
           <div class="desktop-aside">
@@ -174,9 +157,6 @@
                             <div class="ebaygmailc2">ebay@gmail.c</div>
                           </div>
                         </div>
-                      </div>
-                      <div class="wrapper">
-                        <div class="div1">50</div>
                       </div>
                     </div>
                   </div>
@@ -257,6 +237,9 @@
             </div>
           </div>
         </div>
+        
+
+       
         <div class="main">
           <div class="feed-container">
             <div class="feed-header">
@@ -457,6 +440,9 @@
             </div>
           </div>
         </div>
+        <!--  Centro da Tela -->
+
+        <!-- Lateral direita da tela -->
         <div class="right-sidebar">
           <div class="desktop-aside1">
             <div class="login-area-wrapper">
@@ -741,7 +727,34 @@
             </div>
           </div>
         </div>
+         <!-- Lateral direita da tela -->
+        
       </main>
     </div>
+    <script>
+      // Botões do topo da tela
+      //"todas-home"
+      document.getElementById('todas-home').addEventListener('click', function() {
+        window.location.href = '../home/index.html';});
+              
+      //"todas-sobre-nos"
+      document.getElementById('todas-sobre-nos').addEventListener('click', function() {
+        window.location.href = '../sobre-nos/index.html';});
+
+      //"todas-threads"
+      document.getElementById('todas-threads').addEventListener('click', function() {
+        window.location.href = '../threads/tela1/index.html'});
+
+      //"todas-comunidades"
+      document.getElementById('todas-comunidades').addEventListener('click', function() {
+        window.location.href = '../comunidade/index.html';});
+
+      //"todas-melhores"
+      document.getElementById('todas-melhores').addEventListener('click', function() {
+        window.location.href = '../melhores_threads/index.html';});
+      // Botões do topo da tela
+
+
+    </script>
   </body>
 </html>

@@ -8,6 +8,91 @@
   display: inline-block;
   min-width: 49px;
 }
+.profile {
+  position: relative;
+  font-weight: 600;
+}
+.desktop-navbar-component,
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90rem;
+}
+.desktop-navbar-component {
+  background-color: var(--brand-color-third-color);
+  height: 5.625rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-inter);
+}
+.brands-parent {
+  top: 0.688rem;
+  left: 2.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.brands-parent,
+.links1,
+.navbar {
+  position: absolute;
+}
+.links1 {
+  top: 2.438rem;
+  right: 2.063rem;
+  width: 35.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  top: 0;
+  left: 40.563rem;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(152.9deg, #f1b56e, #feecb0);
+  width: 39.5rem;
+  height: 6.375rem;
+  overflow: hidden;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.group-icon {
+  width: 2.938rem;
+  position: relative;
+  height: 2.875rem;
+}
+.logo-brand-child,
+.logo-brand-inner,
+.logo-brand-item {
+  position: absolute;
+  height: 63.34%;
+  width: 63.44%;
+  border-radius: 50%;
+  transform: rotate(22.2deg);
+  transform-origin: 0 0;
+}
+
+.logo-brand-inner,
+.logo-brand-item {
+  top: 15.13%;
+  right: -0.65%;
+  bottom: 21.52%;
+  left: 37.2%;
+  background-color: var(--brand-color-primary);
+}
+
+.ellipse-div,
+.logo-brand-child1 {
+  position: absolute;
+  border-radius: 50%;
+  display: none;
+}
+
 .about,
 .community,
 .leaderboards,
@@ -329,15 +414,9 @@
   gap: 40px;
   max-width: 100%;
 }
-.about1,
-.community1,
-.home1,
-.leaderboards1,
-.threads1 {
-  height: 24px;
+.profile {
   position: relative;
   font-weight: 600;
-  display: inline-block;
 }
 .links1,
 .navbar1 {

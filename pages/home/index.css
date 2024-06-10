@@ -507,23 +507,8 @@
   background: linear-gradient(91.16deg, #697290, #cd7aff);
 }
 .logo-brand-inner,
-.logo-brand-item {
-  top: 15.13%;
-  right: -0.65%;
-  bottom: 21.52%;
-  left: 37.2%;
-  background-color: var(--brand-color-primary);
-}
-.logo-brand-inner {
-  height: 63.05%;
-  width: 67.98%;
-  top: 77.13%;
-  right: -44.9%;
-  bottom: -40.18%;
-  left: 76.92%;
-  background-color: var(--color-plum);
-  transform: rotate(-172.7deg);
-}
+
+
 .ellipse-div,
 .logo-brand-child1 {
   position: absolute;
