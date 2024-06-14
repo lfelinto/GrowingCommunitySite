@@ -1862,7 +1862,10 @@
 }
 .leads1,
 .main {
+  position: relative;
+  right: 0px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   max-width: 100%;
@@ -1875,7 +1878,9 @@
   font-size: var(--font-size-base);
 }
 .main {
-  height: 934px;
+  position: relative;
+  right: 150px;
+  height: 900px;
   flex: 1;
   overflow: hidden;
   align-items: center;
