@@ -613,10 +613,12 @@
 /* Dispositivos grandes (desktops) */
 @media (min-width: 1024px) {
   .group-child {
-    width: 90rem;
-    height: 64rem;
+    width: 120rem;
+    height: 90rem;
   }
   .left-side {
+    position: absolut;
+    right: 0;
     left: 45rem;
     width: 45rem;
     padding: 8.75rem;
