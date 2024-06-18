@@ -345,6 +345,7 @@
                   </div>
                 </div>
                 <div class="post-interaction">
+                  <!-- like -->
                   <div class="post-engagement">
                     <img
                       class="thumbs-up-icon"
@@ -356,6 +357,7 @@
                     <div class="interaction-pair">
                       <div class="interaction-separator">10</div>
                     </div>
+                    <!-- Deslike -->
                     <div class="downvote-icon-area">
                       <img
                         class="iconsaxoutlinedislike"
@@ -387,7 +389,7 @@
             <div class="login-panel">
               <div class="login-form">
                 <button class="login-header">
-                  <div class="login"id='botao-login'>Criar</div>
+                  <div class="login"id='botao-criar'>Criar</div>
                 </button>
               </div>
             </div>
@@ -714,8 +716,9 @@
       document.getElementById('botao-mensagens').addEventListener('click', function(){
         window.location.href = '../melhores_threads/index.html'
       })
-      document.getElementById('botao-login').addEventListener('click', function(){
-        window.location.href = '../threads/index.hmtl'
+      // "Login"
+      document.getElementById('botao-criar').addEventListener('click', function(){
+        window.location.href = '../criar_thread/index.html'
       })
     </script>
   </body>
