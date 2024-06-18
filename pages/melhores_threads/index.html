@@ -430,8 +430,8 @@
           <div class="desktop-aside1">
             <div class="login-area-wrapper">
               <div class="login-area">
-                <button class="login-title">
-                  <div class="login">Login</div>
+                <button class="login-title" id="botao-login" >
+                  <div class="login"id="botao-login">Login</div>
                 </button>
               </div>
             </div>
@@ -715,6 +715,9 @@
       </main>
     </div>
     <script>
+      // Botão login
+      document.getElementById('botao-login').addEventListener('click', function() {
+        window.location.href = '../login/index.html';});
       // Botões do topo da tela
       //"todas-home"
       document.getElementById('todas-home').addEventListener('click', function() {
