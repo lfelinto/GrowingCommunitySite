@@ -690,11 +690,11 @@
           </div>
           <div class="navbar">
             <div class="links1">
-              <div class="profile">Home</div>
-              <div class="profile">Sobre-nós</div>
-              <div class="profile">Threads</div>
-              <div class="profile">Comunidade</div>
-              <div class="profile">Melhores</div>
+              <div class="profile"id="todas-home">Home</div>
+              <div class="profile"id="todas-sobre-nos">Sobre-nós</div>
+              <div class="profile"id="todas-threads">Threads</div>
+              <div class="profile"id="todas-comunidades">Comunidade</div>
+              <div class="profile"id="todas-melhores">Melhores</div>
             </div>
           </div>
           <div class="frame-parent48">
@@ -710,5 +710,31 @@
         </div>
       </div>
     </div>
+    <script>
+
+      // Botões do topo da tela
+      //"todas-home"
+      document.getElementById('todas-home').addEventListener('click', function() {
+        window.location.href = '../home/index.html';});
+              
+      //"todas-sobre-nos"
+      document.getElementById('todas-sobre-nos').addEventListener('click', function() {
+        window.location.href = '../sobre-nos/index.html';});
+
+      //"todas-threads"
+      document.getElementById('todas-threads').addEventListener('click', function() {
+        window.location.href = '../threads/tela1/index.html'});
+
+      //"todas-comunidades"
+      document.getElementById('todas-comunidades').addEventListener('click', function() {
+        window.location.href = '../comunidade/index.html';});
+
+      //"todas-melhores"
+      document.getElementById('todas-melhores').addEventListener('click', function() {
+        window.location.href = '../melhores_threads/index.html';});
+      // Botões do topo da tela
+
+
+    </script>
   </body>
 </html>
