@@ -51,15 +51,6 @@
               </div>
             </div>
           </div>
-          <div class="navbar">
-            <div class="links">
-              <div class="home">Home</div>
-              <div class="about">About</div>
-              <div class="threads">Threads</div>
-              <div class="community">Community</div>
-              <div class="leaderboards">Leaderboards</div>
-            </div>
-          </div>
           <div class="frame-group">
             <div class="frame-wrapper">
               <img class="frame-child" alt="" />
@@ -68,14 +59,14 @@
           </div>
         </div>
         <img
-          class="main-interface-child"
+          class="main-interface-child"id='botao-notificacao'
           loading="lazy"
           alt=""
           src="./public/group-20-1.svg"
         />
 
         <img
-          class="iconsaxlinearsmsnotification1"
+          class="iconsaxlinearsmsnotification1"id='botao-mensagens'
           loading="lazy"
           alt=""
           src="./public/iconsaxlinearsmsnotification-1.svg"
@@ -228,7 +219,7 @@
                 />
 
                 <div class="link-containers">
-                  <h3 class="profile1">Perfil</h3>
+                  <h3 class="profile1"id="botao-perfil">Perfil</h3>
                 </div>
               </div>
               <div class="list-link-14">
@@ -240,7 +231,7 @@
                 />
 
                 <div class="your-threads-wrapper">
-                  <h3 class="your-threads1">Seus Tópicos</h3>
+                  <h3 class="your-threads1"id='botao-topicos'>Seus Tópicos</h3>
                 </div>
               </div>
               <div class="list-link-15">
@@ -250,14 +241,15 @@
                   alt=""
                   src="./public/bookmarks-1.svg"
                 />
-
                 <div class="saved-wrapper">
-                  <h3 class="saved1">Salvos</h3>
+                  <h3 class="saved1"id='botao-salvos'>Salvos</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+<!-- Parte lateral esquerda -->
         <div class="profile-content-parent">
           <div class="profile-content">
             <div class="banner-profile">
@@ -273,7 +265,7 @@
             </div>
             <div class="user-fullname-parent">
               <div class="user-fullname">
-                <h1 class="ebayyou-anggoro">Ebayyou Anggoro (;</h1>
+                <h1 class="ebayyou-anggoro">Ebayyou Anggoro</h1>
                 <div class="user-1jksdw1ad">user-1jksdw1ad</div>
               </div>
               <div class="hydroponic-nacho-pop-tarts">
@@ -382,11 +374,11 @@
           </div>
           <div class="navbar1">
             <div class="links3">
-              <div class="home1">Home</div>
-              <div class="about1">Sobre-nós</div>
-              <div class="threads3">Threads</div>
-              <div class="community1">Comunidade</div>
-              <div class="leaderboards2">Melhores</div>
+              <div class="home1"id="todas-home">Home</div>
+              <div class="about1"id="todas-sobre-nos">Sobre-nós</div>
+              <div class="threads3"id="todas-threads">Threads</div>
+              <div class="community1"id="todas-comunidades">Comunidade</div>
+              <div class="leaderboards2"id="todas-melhores">Melhores</div>
             </div>
           </div>
         </div>
@@ -395,7 +387,7 @@
             <div class="login-panel">
               <div class="login-form">
                 <button class="login-header">
-                  <div class="login">Criar</div>
+                  <div class="login"id='botao-login'>Criar</div>
                 </button>
               </div>
             </div>
@@ -682,5 +674,49 @@
         </div>
       </main>
     </div>
+    <script>
+      // Botões do topo da tela
+      //"todas-home"
+      document.getElementById('todas-home').addEventListener('click', function() {
+        window.location.href = '../home/index.html';});
+              
+      //"todas-sobre-nos"
+      document.getElementById('todas-sobre-nos').addEventListener('click', function() {
+        window.location.href = '../sobre-nos/index.html';});
+
+      //"todas-threads"
+      document.getElementById('todas-threads').addEventListener('click', function() {
+        window.location.href = '../threads/tela1/index.html'});
+
+      //"todas-comunidades"
+      document.getElementById('todas-comunidades').addEventListener('click', function() {
+        window.location.href = '../comunidade/index.html';});
+
+      //"todas-melhores"
+      document.getElementById('todas-melhores').addEventListener('click', function() {
+        window.location.href = '../melhores_threads/index.html';});
+      // Botões do topo da tela
+      // "Perfil"
+      document.getElementById("botao-perfil").addEventListener('click', function(){
+        window.location.href = '../perfil/index.html';});
+      // "Threads"
+      document.getElementById('botao-topicos').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html';});
+      // "Salvos"
+      document.getElementById('botao-salvos').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+      //"notificação"
+      document.getElementById('botao-notificacao').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+      //"Mensagens"
+      document.getElementById('botao-mensagens').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+      document.getElementById('botao-login').addEventListener('click', function(){
+        window.location.href = '../threads/index.hmtl'
+      })
+    </script>
   </body>
 </html>
