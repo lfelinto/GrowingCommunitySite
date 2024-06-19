@@ -122,7 +122,7 @@
               <img class="home-icon1" alt="" src="./public/home-1.svg" />
 
               <div class="navigation-icons">
-                <h3 class="profile1">Perfil</h3>
+                <h3 class="profile1" id="botao-perfil">Perfil</h3>
               </div>
             </div>
             <div class="list-link-14">
@@ -133,7 +133,7 @@
               />
 
               <div class="your-threads-wrapper">
-                <h3 class="your-threads1">Seus Tópicos</h3>
+                <h3 class="your-threads1" id="botao-topicos">Seus Tópicos</h3>
               </div>
             </div>
             <div class="list-link-15">
@@ -144,7 +144,7 @@
               />
 
               <div class="saved-wrapper">
-                <h3 class="saved1">Salvos</h3>
+                <h3 class="saved1" id="botao-salvo">Salvos</h3>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@
           <div class="user-panel-content">
             <div class="login-area-wrapper">
               <button class="login-area">
-                <div class="login">Login</div>
+                <div class="login" id='botao-login'>Login</div>
               </button>
             </div>
           </div>
@@ -495,19 +495,20 @@
             <img class="iconsaxlinearsmsnotification" alt="" />
           </div>
         </div>
+        <!-- Notificações -->
         <img
-          class="navbar-content-child"
+          class="navbar-content-child" id = 'botao-notifcacoes'
           alt=""
           src="./public/group-20-1.svg"
         />
-
+        <!-- Mensagens superior direito -->
         <img
-          class="iconsaxlinearsmsnotification1"
+          class="iconsaxlinearsmsnotification1" id = 'botao-mensagem'
           alt=""
           src="./public/iconsaxlinearsmsnotification-1.svg"
         />
 
-        <h1 class="digiforumio1">Plantwise</h1>
+        <h1 class="digiforumio1" id="click-plant">Plantwise</h1>
         <div class="platform-discussion1">Platforma de Discussão</div>
         <div class="search1">
           <img
@@ -520,12 +521,12 @@
         </div>
       </header>
       <h1 class="top-community-that-container">
-        <p class="top-community-that">Top community that</p>
-        <p class="you-can-join">you can join & discuss</p>
+        <p class="top-community-that">Principais comunidades que</p>
+        <p class="you-can-join">você pode participar e discutir</p>
       </h1>
       <h3 class="you-can-join1">
-        You can join the community you want to discuss with anyone, anywhere,
-        and anytime.
+        Você pode ingressar na comunidade que deseja discutir com qualquer pessoa, em qualquer lugar,
+        e a qualquer hora.
       </h3>
       <textarea class="main-content" rows="{13}" cols="{19}"> </textarea>
       <div class="main-content1">
@@ -538,16 +539,17 @@
               src="./public/iconsaxlinearmirroringscreen.svg"
             />
 
-            <h2 class="nothing-community">Nothing Community</h2>
+            <h2 class="nothing-community">Sem comunidade</h2>
           </div>
         </div>
         <div class="sorry-peoplespeech-community-container">
           <span
-            >sorry #PeopleSpeech, community feature not yet available. but don't
-            worry, this feature is being worked on by
+            >
+            desculpe, o recurso de comunidade ainda não está disponível. mas não
+              se preocupe, esse recurso está sendo trabalhado por
           </span>
-          <span class="professional-developers">professional developers.</span>
-          <span> see you again...</span>
+          <span class="professional-developers">profissionais dev.</span>
+          <span> Até a proxíma...</span>
         </div>
       </div>
     </div>
@@ -573,6 +575,32 @@
       // "Melhores"
       document.getElementById('botao-melhores').addEventListener('click', function() {
         window.location.href = '../melhores_threads/index.html'});
+      // "PLANTWISE"
+      document.getElementById('click-plant').addEventListener('click', function() {
+        window.location.href = '../home/index.html'});
+      // "Login"
+      document.getElementById('botao-login').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // "Perfil"
+      document.getElementById('botao-perfil').addEventListener('click', function() {
+        window.location.href = '../perfil/index.html'});
+      
+      // Seus topicos
+      document.getElementById('botao-topicos').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Salvos
+      document.getElementById('botao-salvo').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Mensagens
+      document.getElementById('botao-mensagem').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Notificação
+      document.getElementById('botao-notifcacoes').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
     </script>
   </body>
 </html>
