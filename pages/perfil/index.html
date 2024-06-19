@@ -72,7 +72,7 @@
           src="./public/iconsaxlinearsmsnotification-1.svg"
         />
 
-        <h1 class="digiforumio1">Plantwise</h1>
+        <h1 class="digiforumio1"id='click-plant'>Plantwise</h1>
         <div class="platform-discussion1">Platforma de Discussão</div>
         <div class="search1">
           <img
@@ -688,7 +688,7 @@
 
       //"todas-threads"
       document.getElementById('todas-threads').addEventListener('click', function() {
-        window.location.href = '../threads/tela1/index.html'});
+        window.location.href = '../todas_threads/index.html'});
 
       //"todas-comunidades"
       document.getElementById('todas-comunidades').addEventListener('click', function() {
@@ -719,6 +719,9 @@
       // "Login"
       document.getElementById('botao-criar').addEventListener('click', function(){
         window.location.href = '../criar_thread/index.html'
+      })
+      document.getElementById('click-plant').addEventListener('click', function(){
+        window.location.href = '../home/index.html'
       })
     </script>
   </body>

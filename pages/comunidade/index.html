@@ -23,23 +23,6 @@
     <div class="desktop-grupos-e-comunidades">
       <div class="right-panel">
         <div class="desktop-aside">
-          <div class="links">
-            <div class="list-link-1">
-              <img class="home-icon" alt="" />
-
-              <div class="profile">Profile</div>
-            </div>
-            <div class="list-link-11">
-              <img class="your-threads-icon" alt="" />
-
-              <div class="your-threads">Your Threads</div>
-            </div>
-            <div class="list-link-12">
-              <img class="bookmarks-icon" alt="" />
-
-              <div class="saved">Saved</div>
-            </div>
-          </div>
           <div class="right-panel-content">
             <div class="top-leads">
               <div class="leaderboards">
@@ -449,11 +432,11 @@
       </div>
       <div class="navbar">
         <div class="links2">
-          <div class="home">Home</div>
-          <div class="about">Sobre-nós</div>
-          <div class="threads">Threads</div>
-          <div class="community">Comunidade</div>
-          <div class="leaderboards1">Melhores</div>
+          <div class="home"id='botao-home'>Home</div>
+          <div class="about" id='botao-sobre'>Sobre-nós</div>
+          <div class="threads" id='botao-threads'>Threads</div>
+          <div class="community" id='botao-comunidade'>Comunidade</div>
+          <div class="leaderboards1" id="botao-melhores">Melhores</div>
         </div>
       </div>
       <div class="logo-brand">
@@ -568,5 +551,28 @@
         </div>
       </div>
     </div>
+    <script>
+      
+      // Botões do topo da tela
+      // Botão home
+      document.getElementById('botao-home').addEventListener('click', function() {
+        window.location.href = '../home/index.html';});
+
+      //"todas-sobre-nos"
+      document.getElementById('botao-sobre').addEventListener('click', function() {
+        window.location.href = '../sobre-nos/index.html';});
+
+      //"todas-threads"
+      document.getElementById('botao-threads').addEventListener('click', function() {
+        window.location.href = '../todas_threads/index.html'});
+
+      // "Comunidade"
+      document.getElementById('botao-comunidade').addEventListener('click', function() {
+        window.location.href = '../comunidade/index.html'});
+      
+      // "Melhores"
+      document.getElementById('botao-melhores').addEventListener('click', function() {
+        window.location.href = '../melhores_threads/index.html'});
+    </script>
   </body>
 </html>

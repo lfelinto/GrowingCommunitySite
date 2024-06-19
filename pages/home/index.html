@@ -65,15 +65,15 @@
         </div>
         <!--  cabecalho -->
 
-        <img class="content-area-child" alt="" src="./public/group-20-1.svg" />
+        <img class="content-area-child"id='botao-notificacao' alt="" src="./public/group-20-1.svg" />
 
         <img
-          class="iconsaxlinearsmsnotification1"
+          class="iconsaxlinearsmsnotification1"id='botao-mensagens'
           alt=""
           src="./public/iconsaxlinearsmsnotification-1.svg"
         />
 
-        <h1 class="digiforumio1">Plantwise</h1>
+        <h1 class="digiforumio1"id='click-plant'>Plantwise</h1>
         <div class="platform-discussion1">Platforma de Discussão</div>
         <div class="search1">
           <img
@@ -650,7 +650,7 @@
 
       //"todas-threads"
       document.getElementById('todas-threads').addEventListener('click', function() {
-        window.location.href = '../threads/tela1/index.html'});
+        window.location.href = '../todas_threads/index.html'});
 
       //"todas-comunidades"
       document.getElementById('todas-comunidades').addEventListener('click', function() {
@@ -660,8 +660,15 @@
       document.getElementById('todas-melhores').addEventListener('click', function() {
         window.location.href = '../melhores_threads/index.html';});
       // Botões do topo da tela
-
-
+      document.getElementById('botao-mensagens').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+      document.getElementById('botao-notificacao').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+      document.getElementById('click-plant').addEventListener('click', function(){
+        window.location.href = '../home/index.html'
+      })
     </script>
   </body>
 </html>
