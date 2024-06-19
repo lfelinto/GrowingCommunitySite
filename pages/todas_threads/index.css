@@ -874,8 +874,9 @@
 }
 .desktop-aside1 {
   position: absolute;
-  top: 5.625rem;
-  left: 71.125rem;
+  top: 88px;
+  right: 0px;
+  flex-direction:column;
   border-left: 2px solid var(--brand-color-fourth-color);
   box-sizing: border-box;
   width: 18.875rem;
@@ -1076,8 +1077,8 @@
 }
 .frame-parent48 {
   position: absolute;
-  top: 1.75rem;
-  left: 82.25rem;
+  top: 27px;
+  right: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1086,10 +1087,9 @@
 }
 .desktop-navbar-component,
 .wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90rem;
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .desktop-navbar-component {
   background-color: var(--brand-color-third-color);
@@ -1099,8 +1099,7 @@
   font-family: var(--font-inter);
 }
 .wrapper {
-  height: 64rem;
-  overflow: hidden;
+  height: 90rem;
 }
 .desktop-threads-1440 {
   width: 100%;
