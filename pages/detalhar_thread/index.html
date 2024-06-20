@@ -84,13 +84,13 @@
                 </p>
                 <p class="blank-line">&nbsp;</p>
                 <p class="blank-line">
-                  Guatemalan purple haze grown outdoors by ganja shaman. Indica
-                  is like ‘in da couch’ like straight couch lock chasing
-                  waterfalls and milkers straight to your dome. Hot box at 4:20
-                  the fatty dank endo doobie in a cashed roachclip, Bogart.
-                  Optimizing dime bags of pre-rolled honey oil dabs. Fully man,
-                  keif gummies are the indoor equivalent of body high super
-                  mellow.
+                  Névoa roxa guatemalteca cultivada ao ar livre por xamã ganja. Indica
+                  é como 'no sofá', como perseguir o bloqueio do sofá
+                  cachoeiras e ordenhadores direto para sua cúpula. Caixa quente às 4:20
+                  o gordo e úmido endo doobie em um roachclip descontado, Bogart.
+                  Otimizando sacos de dez centavos de salgadinhos de óleo de mel pré-enrolados. Totalmente homem,
+                  gomas keif são o equivalente interno do body high super
+                  maduro.
                 </p>
               </div>
               <div class="group-div">
@@ -220,17 +220,17 @@
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/home.svg" />
 
-              <div class="profile">Perfil</div>
+              <div class="profile"id='botao-perfil'>Perfil</div>
             </div>
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/your-threads.svg" />
 
-              <div class="profile">Seus Tópicos</div>
+              <div class="profile" id="botao-topicos">Seus Tópicos</div>
             </div>
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/bookmarks.svg" />
 
-              <div class="profile">Salvos</div>
+              <div class="profile" id="botao-salvo">Salvos</div>
             </div>
           </div>
           <div class="top-leads">
@@ -480,7 +480,7 @@
         </div>
         <div class="desktop-aside-inner">
           <div class="login-wrapper">
-            <div class="login">Criar</div>
+            <div class="login"id='botao-criar'>Criar</div>
           </div>
         </div>
       </div>
@@ -518,11 +518,11 @@
         </div>
         <div class="navbar">
           <div class="links1">
-            <div class="profile">Home</div>
-            <div class="profile">Sobre-nós</div>
-            <div class="profile">Threads</div>
-            <div class="profile">Comunidade</div>
-            <div class="profile">Melhores</div>
+            <div class="profile" id="botao-home">Home</div>
+            <div class="profile" id="botao-sobre">Sobre-nós</div>
+            <div class="profile" id="botao-threads">Threads</div>
+            <div class="profile" id="botao-comunidade">Comunidade</div>
+            <div class="profile" id="botao-melhores">Melhores</div>
           </div>
         </div>
         <div class="frame-parent36">
@@ -537,5 +537,57 @@
         </div>
       </div>
     </div>
+    <script>
+      
+      // Botões do topo da tela
+      // Botão home
+      document.getElementById('botao-home').addEventListener('click', function() {
+        window.location.href = '../home/index.html'});
+
+      //"todas-sobre-nos"
+      document.getElementById('botao-sobre').addEventListener('click', function() {
+        window.location.href = '../sobre-nos/index.html'});
+
+      //"todas-threads"
+      document.getElementById('botao-threads').addEventListener('click', function() {
+        window.location.href = '../todas_threads/index.html'});
+
+      // "Comunidade"
+      document.getElementById('botao-comunidade').addEventListener('click', function() {
+        window.location.href = '../comunidade/index.html'});
+      
+      // "Melhores"
+      document.getElementById('botao-melhores').addEventListener('click', function() {
+        window.location.href = '../melhores_threads/index.html'});
+      // "PLANTWISE"
+      document.getElementById('click-plant').addEventListener('click', function() {
+        window.location.href = '../home/index.html'});
+      // "Login"
+      document.getElementById('botao-login').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // "Perfil"
+      document.getElementById('botao-perfil').addEventListener('click', function() {
+        window.location.href = '../perfil/index.html'});
+      
+      // Seus topicos
+      document.getElementById('botao-topicos').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Salvos
+      document.getElementById('botao-salvo').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Mensagens
+      document.getElementById('botao-mensagem').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      
+      // Notificação
+      document.getElementById('botao-notifcacoes').addEventListener('click', function() {
+        window.location.href = '../login/index.html'});
+      // Criar Thread
+      document.getElementById('botao-criar').addEventListener('click', function() {
+        window.location.href = '../criar_thread/index.html'});
+    </script>
   </body>
 </html>

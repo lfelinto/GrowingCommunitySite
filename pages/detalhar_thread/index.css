@@ -341,7 +341,7 @@
 }
 .main {
   top: 5.625rem;
-  left: 20.063rem;
+  left: 35.063rem;
   width: 51.188rem;
   height: 67.313rem;
 }
@@ -806,12 +806,12 @@
 }
 .desktop-aside1 {
   position: absolute;
-  top: 5.625rem;
-  left: 71.125rem;
+  top: 88px;
+  right: 0px;
   border-left: 2px solid var(--brand-color-fourth-color);
   box-sizing: border-box;
-  width: 18.875rem;
-  height: 58.375rem;
+  width: 300px;
+  height: 934px;
   overflow: hidden;
 }
 .logo-brand-child,
@@ -970,18 +970,25 @@
   font-family: var(--font-poppins);
 }
 .brands-parent {
-  top: 0.688rem;
-  left: 2.188rem;
+  position: absolute;
+  top: 11px;
+  left: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-21xl);
+  gap: 40px;
+  max-width: 100%;
 }
 .brands-parent,
 .links1,
 .navbar {
   position: absolute;
+}
+.links1,
+.navbar {
+  position: absolute;
+  max-width: 100%;
 }
 .links1 {
   top: 2.438rem;
@@ -1011,8 +1018,8 @@
 }
 .frame-parent36 {
   position: absolute;
-  top: 1.75rem;
-  left: 82.25rem;
+  top: 28px;
+  left: 1716px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1020,16 +1027,13 @@
   gap: var(--gap-lg);
 }
 .desktop-navbar-component {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 90px;
+  flex: 1;
+  position: relative;
   background-color: var(--brand-color-third-color);
-  width: 90rem;
-  height: 5.625rem;
-  font-size: var(--font-size-5xl);
-  color: var(--color-whitesmoke);
-  font-family: var(--font-inter);
+  max-width: 100%;
 }
+
 .desktop-detalhando-threads {
   width: 100%;
   position: relative;
