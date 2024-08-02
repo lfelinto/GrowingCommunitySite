@@ -392,17 +392,17 @@
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/home.svg" />
 
-              <div class="profile">Perfil</div>
+              <div class="profile" id="botao-perfil">Perfil</div>
             </div>
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/your-threads.svg" />
 
-              <div class="profile">Seus Tópicos</div>
+              <div class="profile" id="botao-topicos">Seus Tópicos</div>
             </div>
             <div class="list-link-1">
               <img class="home-icon" alt="" src="./public/bookmarks.svg" />
 
-              <div class="profile">Salvos</div>
+              <div class="profile" id="botao-salvos">Salvos</div>
             </div>
           </div>
           <div class="top-leads">
@@ -652,7 +652,7 @@
           </div>
           <div class="desktop-aside-inner">
             <div class="login-wrapper">
-              <div class="login">Criar</div>
+              <div class="login" id="botao-criar">Criar</div>
             </div>
           </div>
         </div>
@@ -734,6 +734,28 @@
         window.location.href = '../melhores_threads/index.html';});
       // Botões do topo da tela
 
+      //Botões da lateral esquerda
+      //Botão perfil
+      document.getElementById('botao-perfil').addEventListener('click', function() {
+        window.location.href = '../perfil/index.html';
+      });
+
+      //Botão topicos
+      document.getElementById('botao-topicos').addEventListener('click', function(){
+        window.location.href = '../topicos/index.html';
+      })
+
+      //Botão salvos
+      document.getElementById('botao-salvos').addEventListener('click', function(){
+        window.location.href = '../salvos/index.html';
+      })
+      //Botões da lateral esquerda
+
+      //Botões da lateral direita
+      //"Botão criar"
+      document.getElementById('botao-criar').addEventListener('click', function(){
+        window.location.href = '../criar_thread/index.html'
+      })
 
     </script>
   </body>

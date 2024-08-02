@@ -344,7 +344,7 @@
 .frame-group {
   position: absolute;
   top: 1.75rem;
-  left: 82.25rem;
+  left: 94.3%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -356,7 +356,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 90rem;
+  width: 100%;
 }
 .desktop-navbar-component {
   background-color: var(--brand-color-third-color);

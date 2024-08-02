@@ -116,7 +116,7 @@
 .nothing-thread {
   position: absolute;
   top: 414px;
-  left: 528px;
+  left: 750px;
   border-bottom: 4px solid var(--brand-color-fourth-color);
   box-sizing: border-box;
   width: 407px;
@@ -911,7 +911,7 @@
 .desktop-aside1 {
   position: absolute;
   top: 90px;
-  left: 1140px;
+  left: 1600px;
   border-left: 2px solid var(--brand-color-fourth-color);
   box-sizing: border-box;
   width: 302px;
@@ -1513,7 +1513,7 @@
 .alert {
   position: absolute;
   top: 36px;
-  left: 523px;
+  left: 1300px;
   box-shadow: 7px 7px 0 rgba(13, 10, 10, 0.25);
   border-radius: var(--br-8xs);
   background-color: var(--brand-color-fourth-color);

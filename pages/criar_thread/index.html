@@ -97,11 +97,11 @@
           </div>
           <div class="navbar">
             <div class="links">
-              <div class="crie-a-sua">Home</div>
-              <div class="crie-a-sua">Sobre-nós</div>
-              <div class="crie-a-sua">Threads</div>
-              <div class="crie-a-sua">Comunidade</div>
-              <div class="crie-a-sua">Melhores</div>
+              <div class="crie-a-sua" id="botao-home">Home</div>
+              <div class="crie-a-sua" id="botao-sobre">Sobre-nós</div>
+              <div class="crie-a-sua" id="botao-threads">Threads</div>
+              <div class="crie-a-sua" id="botao-comunidade">Comunidade</div>
+              <div class="crie-a-sua" id="botao-melhores">Melhores</div>
             </div>
           </div>
           <div class="frame-group">
@@ -121,17 +121,17 @@
           <div class="list-link-1">
             <img class="home-icon" alt="" src="./public/home.svg" />
 
-            <div class="crie-a-sua">Perfil</div>
+            <div class="crie-a-sua" id="botao-perfil">Perfil</div>
           </div>
           <div class="list-link-1">
             <img class="home-icon" alt="" src="./public/your-threads.svg" />
 
-            <div class="crie-a-sua">Seus Tópicos</div>
+            <div class="crie-a-sua" id="botao-topicos">Seus Tópicos</div>
           </div>
           <div class="list-link-1">
             <img class="home-icon" alt="" src="./public/bookmarks.svg" />
 
-            <div class="crie-a-sua">Salvos</div>
+            <div class="crie-a-sua" id="botao-salvos">Salvos</div>
           </div>
         </div>
         <div class="top-leads">
@@ -210,5 +210,48 @@
         </div>
       </div>
     </div>
+    <script>
+      //barra superior
+      //Home
+      document.getElementById('botao-home').addEventListener('click', function(){
+        window.location.href = '../home/index.html';
+      })
+      
+      //sobre-nos
+      document.getElementById('botao-sobre').addEventListener('click', function(){
+        window.location.href = '../sobre-nos/index.html';
+      })
+
+      //Threads
+      document.getElementById('botao-threads').addEventListener('click', function(){
+        window.location.href = '../todas_threads/index.html'
+      })
+
+      //Comunidade
+      document.getElementById('botao-comunidade').addEventListener('click', function(){
+        window.location.href = '../comunidade/index.html'
+      })
+
+      //Melhores
+      document.getElementById('botao-melhores').addEventListener('click', function(){
+        window.location.href = '../melhores_threads/index.html'
+      })
+
+      //Barra lateral esquerda
+      //Perfil
+      document.getElementById('botao-perfil').addEventListener('click', function(){
+        window.location.href = '../perfil/index.html'
+      })
+      
+      //Seus Topicos
+      document.getElementById('botao-topicos').addEventListener('click', function(){
+        window.location.href = '../seus-topicos/index.html'
+      })
+
+      //Salvos
+      document.getElementById('botao-salvos').addEventListener('click', function(){
+        window.location.href = '../salvos/index.html'
+      })
+    </script>
   </body>
 </html>
