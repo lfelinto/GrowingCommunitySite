@@ -2266,6 +2266,7 @@
 }
 .desktop-melhores-threads-1 {
   width: 100%;
+  height: 1920px;
   position: relative;
   background-color: var(--brand-color-main-color);
   overflow: hidden;
